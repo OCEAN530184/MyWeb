@@ -4,240 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BNK 부산은행</title>
-    <style>
-        body {
-            margin: 30px 0%;
-        }
+    <title>담은식탁</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        .main {
-            margin: 0px 23%;
-        }
-
-        .hr1 {
-            height: 1px;
-            background-color: red;
-        }
-
-        .container {
-            display: flex;
-        }
-
-        .login {
-            justify-content: flex-end;
-            font-size: 14px;
-        }
-
-        .login div {
-            margin: 0px 4px;
-        }
-
-        .header {
-            align-items: center;
-            height: 80px;
-        }
-
-        .header .item {
-            flex: 1 0 0;
-        }
-
-        .header .item:nth-child(1) {
-            flex: 5 0 0;
-        }
-
-        .main1 .item {
-            flex: 1 0 0;
-            height: 280px;
-            margin: 10px;
-            border-spacing: 10px;
-        }
-
-        .main1 .item tr {
-            text-align: center;
-        }
-
-        .main1 .item tr td {
-            background-color: antiquewhite;
-        }
-
-        .main1 .item tr:nth-child(1) td:nth-child(1) {
-            width: 80%;
-        }
-
-        .main2 {
-            justify-content: space-between;
-            height: 200px;
-            padding: 30px 0px 0px;
-        }
-
-        .main2 .item {
-            flex: 1 0 0;
-            text-align: center;
-        }
-
-        .main3 {
-            justify-content: space-between;
-            margin: 0px 23% 60px;
-        }
-
-        .main3 .item {
-            flex: 1 0 0;
-            width: 33.3%;
-        }
-
-
-        .main3 .item .text1 {
-            font-size: 15px;
-            line-height: 1;
-        }
-
-        .main3 .item:nth-child(3) table {
-            border-spacing: 10px;
-            height: 100%;
-            width: 100%;
-        }
-
-        .main3 .item:nth-child(3) table tr {
-            text-align: center;
-            background-color: rgb(194, 243, 194);
-        }
-
-        .bottom .item {
-            flex: 1 0 0;
-        }
-
-        .bottom .item:nth-child(1) {
-            flex: 4 0 0;
-        }
-
-        .red {
-            background-color: rgb(170, 38, 38) !important;
-            color: white;
-        }
-        .black {
-            background-color: rgb(32, 32, 32) !important;
-            color: white;
-        }
-        .blue {
-            background: rgb(34, 109, 105) !important;
-            color: white;
-        }
-
-    </style>
 </head>
 
 <body>
-    <section class="main container login">
-        <div class="item">로그인</div>
-        <div class="item">인증센터</div>
-        <div class="item">은행소개</div>
-        <div class="item">Global</div>
-    </section>
-    <header class="main container header">
-        <h2 class="item"> <a style="color: red;">BNK</a> 부산은행</h2>
-        <div class="item"><a href="personalbank.html">개인뱅킹</a></div>
-        <div class="item">기업뱅킹</div>
-        <div class="item">금융상품</div>
-        <div class="item">[검색하기]</div>
-        <div class="item">[전체메뉴]</div>
+    <!--상단 헤더-->
+    <header>
+        <idv id="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </idv> <!-- logo -->
+        <idv id="top_menu">
+            <ul>
+                <li>로그인</li>
+                <li>|</li>
+                <li>회원가입</li>
+                <li>|</li>
+                <li>마이페이지</li>
+                <li>|</li>
+                <li>주문/배송</li>
+                <li>|</li>
+                <li>고객센터</li>
+            </ul>
+            <form>
+                <input type="text" placeholder="검색어">
+                <input type="submit" value="검색">
+            </form>
+        </idv> <!-- top_menu -->
     </header>
-    <hr class="hr1">
-    <section class="main container main1">
-        <table class="item">
-            <tr>
-                <td rowspan="3"> 커다란 배너입니다</td>
-                <td class="red">작은 배너 1</td>
-            </tr>
-            <tr>
-                <td class="black">작은 배너 2</td>
-            </tr>
-            <tr>
-                <td class="blue">작은 배너 3</td>
-            </tr>
-        </table>
-    </section>
-    <section class="main container main2">
-        <div class="item">
-            <img src="images/com.jpg" width="100px">
-            <h3>베스트상품</h3>
-            <p>온라인판매 TOP5</p>
-        </div>
-        <div class="item">
-            <img src="images/com.jpg" width="100px">
-            <h3>목적별상품</h3>
-            <p>상황에 맞는 자금 관리</p>
-        </div>
-        <div class="item">
-            <img src="images/com.jpg" width="100px">
-            <h3>생애주기별상품</h3>
-            <p>청소년기와 함께 해야하는</p>
-        </div>
-        <div class="item">
-            <img src="images/com.jpg" width="100px">
-            <h3>고객별상품</h3>
-            <p>유아기부터 은퇴설계까지</p>
-        </div>
-        <div class="item">
-            <img src="images/com.jpg" width="100px">
-            <h3>신규상품</h3>
-            <p>최근 6개월이내 출시</p>
-        </div>
-    </section>
-    <section class="main container main3">
-        <div class="item">
-            <h3>새소식 ></h3>
-            <div class="text1">
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-                <P>예시 입력 텍스트입니다. 글이 길어집니다.</P>
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-            </div>
-        </div>
-        <div class="item">
-            <h3>이벤트 ></h3>
-            <div class="text1">
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-                <P>예시 입력 텍스트입니다. 글이 길어집니다.</P>
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-                <p>예시 입력 텍스트입니다. 글이 길어집니다.</p>
-            </div>
-        </div>
-        <div class="item">
-            <table>
-                <tr>
-                    <td>상품공시실</td>
-                    <td>서식/약관/자료실</td>
-                </tr>
-                <tr>
-                    <td>금융소비자보호</td>
-                    <td>고객센터</td>
-                </tr>
-                <tr>
-                    <td>비교조회서비스</td>
-                    <td>서민금융</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <hr>
-    <div class="main">
-        <p style="font-size: 15px;">개인정보처리방침 경영공시 고객정보취급방침 보호금융상품등록부 상품공시실 전자민원접수 전자금융이용자보호수칙 전자금융사기피해금환급제도 <br> 위치기반서비스
-            이용약관</p>
-        <p style="font-size: 16px;">고객상담 1588-6200, 1544-6200 어르신 전용 1800-1100 해외 82-2-1588-6200</p>
-        <p style="font-size: 13px;">COPYTRIGHT ⓒ 2014 BUSANBANK. ALL RIGHTS RESERVED.</p>
-        <div class="container bottom">
-            <div class="item">
-                <img src="images/com.jpg" width="30px">
-                <img src="images/com.jpg" width="30px">
-                <img src="images/com.jpg" width="30px">
-                <img src="images/com.jpg" width="30px">
-            </div>
-            <div class="item">[BNK금융네트워크]</div>
-            <div class="item">[FAMILY SITE]</div>
-        </div>
+    <div id="main_menu">
+        <ul>
+            <li class="menu_item">
+                <a href="manu.html">베스트 메뉴</a>
+                <ul class="sub-menu">
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴2</a></li>
+                    <li><a href="#">서브메뉴3</a></li>
+                </ul>
+            </li>
+            <li>|</li>
+            <li class="menu_item">
+                <a href="output.html">세일</a>
+                <ul class="sub-menu">
+                    <li><a>서브메뉴1</a></li>
+                    <li><a>서브메뉴2</a></li>
+                    <li><a>서브메뉴3</a></li>
+                </ul>
+            </li>
+            <li>|</li>
+            <li class="menu_item">
+                <a href="#">채소</a>
+                <ul class="sub-menu">
+                    <li><a>서브메뉴1</a></li>
+                    <li><a>서브메뉴2</a></li>
+                    <li><a>서브메뉴3</a></li>
+                </ul>
+            </li>
+            <li>|</li>
+            <li class="menu_item">
+                <a href="#">과일/견과</a>
+                <ul class="sub-menu">
+                    <li><a>서브메뉴1</a></li>
+                    <li><a>서브메뉴2</a></li>
+                    <li><a>서브메뉴3</a></li>
+                </ul>
+            </li>
+            <li>|</li>
+            <li class="menu_item">
+                <a href="#">육류</a>
+                <ul class="sub-menu">
+                    <li><a>서브메뉴1</a></li>
+                    <li><a>서브메뉴2</a></li>
+                    <li><a>서브메뉴3</a></li>
+                </ul>
+            </li>
+            <li>|</li>
+            <li class="menu_item">
+                <a href="#">면/양념</a>
+                <ul class="sub-menu">
+                    <li><a>서브메뉴1</a></li>
+                    <li><a>서브메뉴2</a></li>
+                    <li><a>서브메뉴3</a></li>
+                </ul>
+            </li>
+            <li>|</li>
+            <li class="menu_item">
+                <a href="#">유제품</a>
+                <ul class="sub-menu">
+                    <li><a>서브메뉴1</a></li>
+                    <li><a>서브메뉴2</a></li>
+                    <li><a>서브메뉴3</a></li>
+                </ul>
+            </li>
+            <li>|</li>
+            <li class="menu_item">
+                <a href="output.html">산출물</a>
+                <ul class="sub-menu">
+                    <li><a>서브메뉴1</a></li>
+                    <li><a>서브메뉴2</a></li>
+                    <li><a>서브메뉴3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> <!--main_menu-->
+    <div class="hr-shadow">
+        <hr>
     </div>
+    <idv id="banner">
+        <img src="img/img1.jpg">
+    </idv> <!-- logo -->
+    <!--메인 섹션-->
+    <section>
+        <div class="box">
+            <div id="best">
+                <h3>BEST!</h3>
+                <div id="bestitem">
+                    <ul class="item1">
+                        <li><img src="img/food.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food1.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food2.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food3.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                </div>
+            </div> <!--best-->
+            <div id="todayin">
+                <h3>오늘의 입고</h3>
+                <div id="todayinitem">
+                    <ul class="item1">
+                        <li><img src="img/food4.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food3.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food2.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food1.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                </div>
+            </div> <!--todayin-->
+            <div id="review">
+                <h3>생생 후기</h3>
+                <div id="reviewitem">
+                    <ul class="item1">
+                        <li><img src="img/food3.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food2.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food4.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food1.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food2.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food4.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                    <ul class="item1">
+                        <li><img src="img/food4.jpg"></li>
+                        <li class="subject">인기상품1</li>
+                        <li class="des">설명</li>
+                    </ul>
+                </div>
+            </div> <!--review-->
+        </div>
+    </section>
+    <!--좌측 인터페이스-->
+    <div class="rightinter">
+        <h6>BEST</h6>
+        <img src="img/food.jpg"></li>
+        <h6>즐겨찾기</h6>
+        <h6>장바구니</h6>
+    </div>
+    <!--하단 푸터-->
+    <footer>
+        <img src="img/logo.png" style="width: 150px;">
+        <p id="info">
+            담은식탁㈜<br>
+            대표: 왈랄라<br>
+            주소: 여긴없는시 여긴유명구 여긴한산동<br>
+            사업자 등록 번호: 1234567890<br>
+            이메일: 웅냉냐@웅냉.com
+        </p>
+    </footer>
 </body>
 
 </html>

@@ -31,6 +31,16 @@
     font-family: 'GyeonggiMillenniumBackground', sans-serif;
 }
 
+.left {
+    width: 45vw;
+    height: 90vh;
+    position: absolute;
+    top: 5vh;
+    left: 4vw;
+    color: rgba(0, 0, 0, 0.829);
+    padding: 20px;
+}
+
 .right {
     width: 40vw;
     height: 90vh;
@@ -51,7 +61,7 @@
 
 .title h1 {
     position: absolute;
-    border-left: 5px solid white;
+    border-left: 5px solid rgba(0, 0, 0, 0.829);
     display: inline-block;
     font-size: 4rem;
     padding-left: 15px;

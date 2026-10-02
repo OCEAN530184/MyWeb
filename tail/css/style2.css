@@ -40,7 +40,7 @@ p {
 }
 
 .right {
-    background-color: rgba(248, 248, 248, 0.897);
+    background-color: rgba(240, 248, 244, 0.897);
     width: 45vw;
     height: 90vh;
     position: absolute;
@@ -51,7 +51,7 @@ p {
 }
 
 .left {
-    background-color: rgba(248, 248, 248, 0.897);
+    background-color: rgba(240, 248, 244, 0.897);
     width: 45vw;
     height: 90vh;
     position: absolute;
@@ -82,4 +82,11 @@ p {
     height: 450px;
     margin: 0 auto;
     display: block;
+}
+
+.end{
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
 }

@@ -19,7 +19,7 @@
 }
 /* 페이지 큰 틀 */
 .main {
-    background-image: url(../img/img4.jpg), linear-gradient(to right, #f171716c, #e9ffe765);
+    background-image: url(../img/img10.jpg), linear-gradient(to right, #f171716c, #e9ffe765);
     background-blend-mode: luminosity;
     width: 95vw;
     height: 95vh;
@@ -47,7 +47,7 @@
     position: absolute;
     top: 5vh;
     right: 4vw;
-    color: rgba(0, 0, 0, 0.829);
+    color: rgba(255, 255, 255);
 }
 
 /* 제목 */
@@ -61,7 +61,7 @@
 
 .title h1 {
     position: absolute;
-    border-left: 5px solid rgba(0, 0, 0, 0.829);
+    border-left: 5px solid rgba(255, 255, 255);
     display: inline-block;
     font-size: 4rem;
     padding-left: 15px;

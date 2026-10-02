@@ -27,7 +27,7 @@ p {
 
 /* 페이지 큰 틀 */
 .main {
-    background-image: url(../img/img4.jpg), linear-gradient(to right, rgba(126, 108, 108, 0.836), #000000c7);
+    background-image: url(../img/img10.jpg), linear-gradient(to right, #f171716c, #e9ffe765);
     background-blend-mode: luminosity;
     width: 95vw;
     height: 95vh;
@@ -40,7 +40,7 @@ p {
 }
 
 .right {
-    background-color: rgba(240, 248, 244, 0.897);
+    background-color: rgba(255, 255, 255, 0.945);
     width: 45vw;
     height: 90vh;
     position: absolute;
@@ -51,7 +51,7 @@ p {
 }
 
 .left {
-    background-color: rgba(240, 248, 244, 0.897);
+    background-color: rgba(255, 255, 255, 0.945);
     width: 45vw;
     height: 90vh;
     position: absolute;

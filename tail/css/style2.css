@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'GyeonggiMillenniumBackground';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GyeonggiMillenniumBackground';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* 기본 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/* 페이지 큰 틀 */
+.main {
+    background-image: url(../img/img4.jpg), linear-gradient(to right, rgba(126, 108, 108, 0.836), #000000c7);
+    background-blend-mode: luminosity;
+    width: 95vw;
+    height: 95vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 2.5vh;
+    font-family: 'GyeonggiMillenniumBackground', sans-serif;
+}
+
+.right {
+    background-color: rgba(248, 248, 248, 0.897);
+    width: 45vw;
+    height: 90vh;
+    position: absolute;
+    top: 5vh;
+    right: 4vw;
+    color: rgba(0, 0, 0, 0.829);
+    padding: 20px;
+}
+
+.left {
+    background-color: rgba(248, 248, 248, 0.897);
+    width: 45vw;
+    height: 90vh;
+    position: absolute;
+    top: 5vh;
+    left: 4vw;
+    color: rgba(0, 0, 0, 0.829);
+    padding: 20px;
+}
+
+/* 본문 */
+.left h2,
+.right h2 {
+    margin: 10px 0px;
+}
+
+.left h3,
+.right h3 {
+    margin: 5px 0px 20px;
+}
+
+.left p,
+.right p {
+    margin: 15px 0px 15px;
+}
+
+.left img,
+.right img {
+    height: 450px;
+    margin: 0 auto;
+    display: block;
+}

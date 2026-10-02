@@ -20,9 +20,9 @@
 }
 
 p {
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 1.5;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    line-height: 1.7;
 }
 
 /* 페이지 큰 틀 */
@@ -47,7 +47,8 @@ p {
     top: 5vh;
     right: 4vw;
     color: rgba(0, 0, 0, 0.829);
-    padding: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
 .left {
@@ -58,7 +59,9 @@ p {
     top: 5vh;
     left: 4vw;
     color: rgba(0, 0, 0, 0.829);
-    padding: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    
 }
 
 /* 본문 */
@@ -74,14 +77,19 @@ p {
 
 .left p,
 .right p {
-    margin: 15px 0px 15px;
+    margin: 50px 0px 50px;
 }
 
 .left img,
 .right img {
+    width: 90%;
     height: 450px;
-    margin: 0 auto;
+    padding: 8px;
+    margin: 15px auto 25px;
     display: block;
+    object-fit: contain;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
 .end{

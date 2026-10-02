@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <div class="content">
+            <h1>제1회 오답노트</h1>
+            <h2>1. margin과 padding</h2>
+            <p><span>margin</span>은 요소와 요소 간의 간격을 조절가능하다.</p>
+            <p><span>padding</span>은 요소의 테두리 내에서 안의 공백을 두는 것이다.</p>
+            <p>시계방향으로 북동남서(상우하좌) 순서로 쓰인다.<br>
+                두개면 상하/좌우. 세개면 상/좌우/하. 하나면 상하좌우.</p>
+            <p>margin은 요소 자체를 띄우는 거라 배경도 같이 떨어진다.<br>
+                padding은 요소 안에서 공백을 두는 거라 배경은 변화가 없다.</p>
+            <h6><span>※inline과 inline-block</span></h6>
+            <h6>inline을 쓰면 가로세로 길이가 적용되지 않고 글자처럼 취급하므로,<br>
+                좌우 방향은 몰라도 상하 방향은 제대로 공간을 차지하지 않을 수 있다.
+            </h6>
+            <h6>반면 inline-block은 inline처럼 옆으로 배치되지만 block처럼 크기를 가지므로<br>
+                margin과 padding모두 정상적으로 작동한다.
+            </h6>
+            <h2>2. Flex</h2>
+            <p>부모 컨테이너에 <span>display:Flex;</span>를 적용하면 하위 아이템들은 가로 방향으로 배치되며
+                자신의 내용물만큼의 넓이만 차지하게 된다.<br>
+                이때 부모 요소인 컨테이너를 플렉스 컨테이너라고 부르고
+                자식 요소인 애들은 플렉스 아이템이라고 부른다.</p>
+            <p><span>direction</span>은 배치 방향(메인축 방향). 기본적으로 행(가로) 방향으로 배치된다.<br>
+                <span>wrap</span>는 줄넘김 처리.
+                기본적으로 줄바꿈이 없다. 칸을 넘치면 삐져나간다.
+            </p>
+            <p><span>justify</span>는 메인축 방향으로 정렬.
+                기본적으로 direction에 따라 왼쪽+위부터 정렬한다.<br>
+                <span>align</span>은 수직축 방향 정렬. (메인축의 수직방향)
+                기본적으로 수직축 방향의 길이 끝까지 늘어난다.<br>
+                이를테면 direction이 가로 방향이라면 기본 align은 수직 높이를 가득 채우게 된다.<br>
+                align-items면 한 줄의 아이템을, align-content면 여러 줄의 수직축 방향 정렬을 결정한다.
+            </p>
+            <h2>3. Float</h2>
+            <p>float는 요소를 왼쪽/오른쪽으로 띄워서 다른 내용이 옆으로 흐르게 한다.
+                <br>
+                float된 블록 요소는 기본적으로 부모의 전체 너비를 차지하지 않고,<br>
+                내용에 필요한 만큼의 너비로 줄어드는 것처럼 보인다.
+            </p>
+            <p>
+                clear를 하면 float의 영향을 받지 않고 아래로 내려간다.<br>
+                float 아래에 뭔갈 배치하려면 clear: both; 를 해주면 본래대로 배치된다.
+            </p>
+            <h2>4. relative와 absolute</h2>
+            <p>
+                relative는 원래 있던 자신의 자리 기준으로 움직인다.<br>
+                absolute는 특정 부모 요소를 기준으로 위치를 잡아 움직인다.
+            </p>
+            <p>
+                position: relative는 원래 자리를 그대로 차지하면서, 눈에 보이는 위치만 이동하기 때문에 <br>
+                다른 요소 입장에서는 '여기에 box가 있다'라고 인지된다.<br>
+                반면 position: absolute를 하면 일반적인 문서 흐름에서 빠져버린다. <br>
+                즉, 다른 요소들이 box가 없다고 인지하게 되는 것이다.
+            </p>
+            <hr>
+            <h2>~ 잊어버리면 안돼! ~</h2>
+            <p>
+                1. list 를 list-style-type: none; 하고 나서 왼쪽 여백을 없애려면 padding: 0; 하면 된다.
+            </p>
+            <p>
+                2. 이미 잊어버린 것 같다...
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

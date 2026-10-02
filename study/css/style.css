@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* 기본설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h6, span {
+    font-family: 'Suit', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    line-height: 1.2;
+}
+
+/* 박스 */
+
+.box {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    background-color: rgb(219, 219, 219);
+    margin: 0 auto;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.content p,
+.content h1,
+.content h2 {
+    width: 40vw;
+    display: inline-block;
+}
+
+.content p {
+    margin: 2px 0 3px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    padding: 5px 0px 20px;
+    border-bottom: 2px black solid;
+    margin: 0 0 20px;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin: 30px 0 10px;
+}
+
+.content h6 {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 2px 0 2px;
+    color: rgb(230, 0, 0);
+    width: 45vw;
+    display: inline-block;
+}
+
+span {
+    font-weight: bold;
+}
+
+hr{
+    margin: 20px 0px 0px;
+    border: 1px solid black;
+}

@@ -1,14 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>담소카페</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* 상단 전체 */
+        header {
+            width: 100%;
+            height: 240px;
+            box-sizing: border-box;
+
+            background-color: #8b725c;
+            background-image:
+                linear-gradient(to bottom,
+                    rgba(48, 32, 20, 0.15),
+                    rgba(48, 32, 20, 0.35)),
+                url("img/coffee.jpg");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            overflow: hidden;
+        }
+
+        /* 카페 이름 */
+        #title {
+            color: #fffaf0;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(50, 30, 15, 0.55);
+        }
+
+        #title h1 {
+            display: inline-block;
+            margin: 28px 20px 16px;
+            padding: 10px 24px;
+
+            font-size: 38px;
+            letter-spacing: 8px;
+            font-weight: bold;
+
+            border-bottom: 2px solid rgba(255, 250, 240, 0.8);
+        }
+
+        /* 하단 메뉴 바 */
+        #nav {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+
+            background-color: rgba(250, 244, 234, 0.92);
+            border-top: 1px solid rgba(255, 255, 255, 0.7);
+        }
+
+        /* 메뉴 목록 */
+        #nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+            flex-wrap: nowrap;
+        }
+
+        /* 메뉴 항목 */
+        #nav ul li {
+            display: block;
+            padding: 15px 5px;
+
+            color: #704b32;
+            font-size: 15px;
+            font-weight: bold;
+            white-space: nowrap;
+
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+
+            transition:
+                color 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        section {
+            padding: 50px 400px;
+        }
+
+        /* 메뉴 제목 */
+        section h3 {
+            margin: 36px 0 16px;
+            padding: 8px 0;
+
+            color: #704b32;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+            border-bottom: 2px solid #a98462;
+        }
+
+        /* 메뉴 이미지와 소개글 배치 */
+        .box {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 220px minmax(0, 1fr);
+            gap: 24px;
+            align-items: start;
+
+            box-sizing: border-box;
+        }
+
+        /* 메뉴 이미지 */
+        .box img {
+            display: block;
+            width: 100%;
+            height: 220px;
+
+            object-fit: cover;
+            border: 1px solid #c7b29a;
+            box-sizing: border-box;
+        }
+
+        /* 메뉴 소개글 */
+        .box p {
+            margin: 0;
+            padding: 0;
+
+            color: #514237;
+            font-size: 15px;
+            line-height: 2;
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
+
+        /* 메뉴 사이 여백 */
+        .box+h3 {
+            margin-top: 42px;
+        }
+
+        /* 하단 푸터 */
+        .cafe-footer {
+            width: 100%;
+            margin-top: 60px;
+            padding: 28px 20px 20px;
+            box-sizing: border-box;
+
+            text-align: center;
+            color: #6b5140;
+            background-color: #f5eee4;
+
+            border-top: 2px solid #a98462;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        /* 카페 이름 */
+        .cafe-footer .footer-title {
+            color: #704b32;
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        /* 짧은 소개 문구 */
+        .cafe-footer .footer-copy {
+            margin: 6px 0 18px;
+            color: #927963;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        /* 영업 정보 */
+        .cafe-footer .footer-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px 20px;
+
+            margin-bottom: 6px;
+        }
+
+        /* 연락처 */
+        .cafe-footer .footer-contact {
+            margin-top: 4px;
+            color: #6b5140;
+        }
+
+        /* 저작권 */
+        .cafe-footer .footer-copyright {
+            margin: 20px 0 0;
+            padding-top: 12px;
+
+            border-top: 1px solid #d8c8b5;
+            color: #a18c78;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        /* 기본 소개 영역 */
+        #basic {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 0;
+
+            color: #514237;
+            box-sizing: border-box;
+        }
+
+        /* 영문 소제목 */
+        #basic .sub-title {
+            margin: 0 0 16px;
+
+            color: #a98462;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        /* 메인 제목 */
+        #basic h2:first-of-type {
+            margin: 0 0 22px;
+
+            color: #704b32;
+            font-size: 28px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        /* 소개 문단 */
+        #basic p:not(.sub-title) {
+            margin: 0;
+
+            color: #655448;
+            font-size: 15px;
+            line-height: 2.1;
+            word-break: keep-all;
+        }
+
+        /* 카페 소개 제목 */
+        #basic h2:nth-of-type(2) {
+            margin: 55px 0 22px;
+            padding-bottom: 12px;
+
+            color: #704b32;
+            font-size: 21px;
+
+            border-bottom: 2px solid #b69a7c;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>10월 2일 작업 내용</h1>
-    <a href="messege_service/index.html">편지 사이트 이동하기</a><br>
-    <a href="tail/index.html">책 사이트 이동하기</a>
-    <a href="study/index.html">복습 사이트 이동하기</a>
+    <header>
+        <div id="title">
+            <h1>담소</h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li id="category1">[ 카페 소개 ]</li>
+                <li id="category2">[ 메뉴 소개 ]</li>
+                <li id="category3">[ 이용 안내 ]</li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div id="demo">
+            <div id="basic">
+                <p class="sub-title">A MOMENT OF REST</p>
+                <h2>일상에 여유를 더하는 작은 쉼표</h2>
+                <p>
+                    향긋한 커피와 달콤한 디저트,
+                    그리고 편안한 분위기가 함께하는 공간.
+                    담소에서 당신만의 여유로운 시간을 만나 보세요.
+                </p>
+                <h2>카페 소개</h2>
+                <p>
+                    담소는 바쁜 일상 속에서 잠시 쉬어 갈 수 있는
+                    따뜻하고 아늑한 카페입니다.
+                    정성껏 준비한 커피와 디저트를 즐기며
+                    소중한 사람들과 이야기를 나누거나,
+                    혼자만의 시간을 편안하게 보내실 수 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="cafe-footer">
+        <div class="footer-title">DAMSO CAFE</div>
+
+        <p class="footer-copy">
+            일상에 여유를 더하는 작은 쉼표
+        </p>
+
+        <div class="footer-info">
+            <span>영업시간 10:00 - 21:00</span>
+            <span>매주 월요일 휴무</span>
+        </div>
+
+        <div class="footer-contact">
+            문의 000-0000-0000
+        </div>
+
+        <p class="footer-copyright">
+            © 2026 DAMSO CAFE. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        const category1 = document.getElementById("category1");
+        const category2 = document.getElementById("category2");
+        const category3 = document.getElementById("category3");
+        const demo = document.getElementById("demo");
+
+        category1.addEventListener("click", function () {
+
+            //서버통신
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "category1.txt");
+            xhttp.onload = function () {
+                demo.innerHTML = xhttp.responseText;
+            }
+            xhttp.send();
+
+        });
+
+        category2.addEventListener("click", function () {
+
+            //서버통신
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "category2.txt");
+            xhttp.onload = function () {
+                demo.innerHTML = xhttp.responseText;
+            }
+            xhttp.send();
+
+        });
+
+        category3.addEventListener("click", function () {
+
+            //서버통신
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "category3.txt");
+            xhttp.onload = function () {
+                console.log(xhttp.response);
+                demo.innerHTML = xhttp.response;
+            }
+            xhttp.send();
+
+        });
+
+
+    </script>
 </body>
+
 </html>
